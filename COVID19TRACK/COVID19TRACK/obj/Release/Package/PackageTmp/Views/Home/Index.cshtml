@@ -1,0 +1,270 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="padding-bottom:7px" class="content">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="nc-icon nc-globe text-warning"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="numbers">
+                                <p class="card-category">TOTAL CASES</p>
+                                <p class="card-title">@ViewBag.total<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="nc-icon nc-money-coins text-success"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="numbers">
+                                <p class="card-category">RECOVERED</p>
+                                <p class="card-title">@ViewBag.discharged<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-calendar-o"></i>
+                            Last day
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="nc-icon nc-vector text-danger"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="numbers">
+                                <p class="card-category">DEATH</p>
+                                <p class="card-title">@ViewBag.death<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-clock-o"></i>
+                            In the last hour
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="nc-icon nc-favourite-28 text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="numbers">
+                                <p class="card-category">ACTIVE CASES</p>
+                                <p class="card-title">@ViewBag.active<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-refresh"></i>
+                            Update now
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i style="color:#FFEB3B !important" class="nc-icon nc-ambulance text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="numbers">
+                                <p class="card-category">TOTAL TESTED</p>
+                                <p class="card-title">@ViewBag.testingData<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-refresh"></i>
+                            Update now
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i style="color:#4caf50 !important" class="nc-icon nc-sound-wave text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="numbers">
+                                <p class="card-category">RECOVERED%</p>
+                                <p class="card-title">@ViewBag.recper<p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span style="float:right">
+                                *(Based on Closed cases)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-refresh"></i>
+                            Update now
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i style="color:#dc3545 !important" class="nc-icon nc-paper text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="numbers">
+                                <p class="card-category">DEATH%</p>
+                                <p class="card-title">@ViewBag.deathper<p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span style="float:right">
+                                *(Based on Closed cases)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-refresh"></i>
+                            Update now
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-4">
+                            <div class="icon-big text-center icon-warning">
+                                <i style="color:#607D8B !important" class="nc-icon nc-box-2 text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="numbers">
+                                <p class="card-category">CLOSED CASES</p>
+                                <p class="card-title">@ViewBag.closed<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-refresh"></i>
+                            Update now
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> CORONA TRACKER</h4>
+                    Last Refreshed : @ViewBag.lastRefreshed
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                            <th>
+                                State
+                            </th>
+                            <th>
+                                Confirm Cases
+                            </th>
+                            <th>
+                                Discharged
+                            </th>
+                            <th>
+                                Death
+                            </th>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var type in ViewBag.data)
+                                    {
+                                        <tr>
+                                            <td>@type.loc</td>
+                                            <td>@type.totalConfirmed</td>
+                                            <td>@type.discharged</td>
+                                            <td>@type.deaths</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

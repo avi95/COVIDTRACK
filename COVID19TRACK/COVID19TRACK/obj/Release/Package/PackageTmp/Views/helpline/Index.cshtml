@@ -1,0 +1,120 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .card-stats .card-body .card-title {
+        font-size: 18px;
+    }
+</style>
+<div style="padding-bottom:7px" class="content">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-2">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="nc-icon nc-mobile text-warning"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-9">
+                            <div class="numbers">
+                                <p class="card-category">MAIN HELPLINE NUMBER</p>
+                                <p class="card-title"><a href="tel:@ViewBag.number">@ViewBag.number</a><p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-2">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="nc-icon nc-email-85 text-success"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-9">
+                            <div class="numbers">
+                                <p class="card-category">EMAIL</p>
+                                <p class="card-title"><a href="mailto:@ViewBag.email" target="_top">ncov2019@gov.in</a><p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-calendar-o"></i>
+                            Last day
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5 col-md-2">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="nc-icon nc-badge text-danger"></i>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-9">
+                            <div class="numbers">
+                                <p class="card-category">FACEBOOK</p>
+                                <p class="card-title"><a target="_blank" href="@ViewBag.facebook">fb.com/MoHFWIndia</a><p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="card-footer ">
+                        <hr>
+                        <div class="stats">
+                            <i class="fa fa-clock-o"></i>
+                            In the last hour
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">STATE WISE HELPLINE NUMBER</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead class=" text-primary">
+                            <th>
+                                State
+                            </th>
+                            <th>
+                                number
+                            </th>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var type in ViewBag.data)
+                                    {
+                                        <tr>
+                                            <td>@type.loc</td>
+                                            <td><a href="tel:@type.number">@type.number</a></td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
